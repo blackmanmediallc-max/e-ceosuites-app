@@ -1,0 +1,16 @@
+{
+  "name": "eceo-suites-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start-backend": "node replit-server.js",
+    "start-frontend": "cd frontend && npm start",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\""
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5",
+    "concurrently": "^7.6.0"
+  }
+}
